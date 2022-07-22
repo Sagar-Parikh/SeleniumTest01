@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-22T16:39:56 EDT" name="Default suite" finished-at="2022-07-22T16:40:04 EDT" duration-ms="8619">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.validateLoginRegression(java.lang.String, java.lang.String)[pri:1, instance:pageObjectModel.suiteTests.LoginTest@4229bb3f]" name="validateLoginRegression" class="pageObjectModel.suiteTests.LoginTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2022-07-22T16:39:56 EDT" name="Default test" finished-at="2022-07-22T16:40:04 EDT" duration-ms="8619">
+      <class name="pageObjectModel.suiteTests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageObjectModel.suiteTests.LoginTest@4229bb3f]" started-at="2022-07-22T16:39:56 EDT" name="setUp" finished-at="2022-07-22T16:40:04 EDT" duration-ms="8032" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at pageObjectModel.weaver.WeaverBase.setUp(WeaverBase.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginRegression(java.lang.String, java.lang.String)[pri:1, instance:pageObjectModel.suiteTests.LoginTest@4229bb3f]" started-at="2022-07-22T16:40:04 EDT" name="validateLoginRegression" data-provider="data-emails-login-regression" finished-at="2022-07-22T16:40:04 EDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fakeUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fake_Password]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at pageObjectModel.weaver.WeaverBase.setUp(WeaverBase.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginRegression -->
+        <test-method signature="validateLoginRegression(java.lang.String, java.lang.String)[pri:1, instance:pageObjectModel.suiteTests.LoginTest@4229bb3f]" started-at="2022-07-22T16:40:04 EDT" name="validateLoginRegression" data-provider="data-emails-login-regression" finished-at="2022-07-22T16:40:04 EDT" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fakeUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fakeUser]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: invalid argument: entry 0 of 'firstMatch' is invalid
+from invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: cannot parse args
+from invalid argument: each argument must be a string
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'LAPTOP-QQHO79JR', ip: '192.168.0.218', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [null], extensions: []}, pageLoadStrategy: eager}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:84)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:248)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:164)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:106)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:93)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:82)
+at pageObjectModel.weaver.WeaverBase.setUp(WeaverBase.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:617)
+at org.testng.TestRunner.beforeRun(TestRunner.java:607)
+at org.testng.TestRunner.run(TestRunner.java:578)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginRegression -->
+        <test-method is-config="true" signature="close()[pri:0, instance:pageObjectModel.suiteTests.LoginTest@4229bb3f]" started-at="2022-07-22T16:40:04 EDT" name="close" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1658522404677" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- pageObjectModel.suiteTests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
